@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoría Estratégica | Business Bots Solutions</title>
+    <meta name="description" content="Convierte tu idea o empresa en un sistema inteligente con una sesión de consultoría personalizada. Business Bots Solutions.">
+    
+    <!-- SEO & Open Graph -->
+    <link rel="canonical" href="https://businessbots.org/consultoria" />
+    <meta property="og:title" content="Consultoría Estratégica | Business Bots Solutions">
+    <meta property="og:description" content="Convierte tu idea o empresa en un sistema inteligente con una sesión de consultoría personalizada.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Consultoría Estratégica | Business Bots Solutions">
+    <meta name="twitter:description" content="Convierte tu idea o empresa en un sistema inteligente con una sesión de consultoría personalizada.">
+    
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="es" href="https://businessbots.org/consultoria" />
+    <link rel="alternate" hreflang="en" href="https://businessbots.org/en/consultation" />
+    <link rel="alternate" hreflang="fr" href="https://businessbots.org/fr/consultation" />
+    <link rel="alternate" hreflang="it" href="https://businessbots.org/it/consultazione" />
+    <link rel="alternate" hreflang="de" href="https://businessbots.org/de/beratung" />
+    
+    <!-- CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://res.cloudinary.com data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' https://cdn.tailwindcss.com 'unsafe-inline'; connect-src 'self' https://calendly.com;">
+    
+    <!-- Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://calendly.com">
+    <link rel="preconnect" href="https://wa.me">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Business Bots Solutions",
+      "url": "https://businessbots.org",
+      "email": "businessbots.info@gmail.com",
+      "logo": "https://businessbots.org/logo.png",
+      "location": {
+        "@type": "Place",
+        "name": "Palma de Mallorca, ES"
+      },
+      "sameAs": []
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Consultoría Estratégica (Fase 0)",
+      "provider": {
+        "@type": "Organization",
+        "name": "Business Bots Solutions"
+      },
+      "areaServed": "EU",
+      "serviceType": "Business Consulting, Automation, Digital Strategy",
+      "offers": {
+        "@type": "Offer",
+        "price": "50",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "EUR",
+          "price": "50",
+          "minPrice": "50",
+          "maxPrice": "150"
+        },
+        "eligibleRegion": "EU",
+        "availability": "https://schema.org/InStock"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Fase 0: Consultoría estratégica 2h",
+        "itemListElement": [{
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Diagnóstico + Propuesta + Revisión visual"
+          }
+        }]
+      }
+    }
+    </script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        'dark-bg': '#0f1211',
+                        'primary': '#6366f1',
+                    },
+                    backgroundColor: {
+                        'dark-bg': '#0f1211',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --shadow-sm: 0 1px 2px 0 rgb(255 255 255 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(255 255 255 / 0.1), 0 2px 4px -2px rgb(255 255 255 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(255 255 255 / 0.1), 0 8px 10px -6px rgb(255 255 255 / 0.1);
+            --shadow-2xl: 0 25px 50px -12px rgb(255 255 255 / 0.25);
+            --radius-lg: 0.5rem;
+            --radius-xl: 0.75rem;
+            --radius-2xl: 1rem;
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                transform: none !important;
+            }
+        }
+        
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .stagger-1 { transition-delay: 0.1s; }
+        .stagger-2 { transition-delay: 0.2s; }
+        .stagger-3 { transition-delay: 0.3s; }
+        .stagger-4 { transition-delay: 0.4s; }
+        .stagger-5 { transition-delay: 0.5s; }
+        .stagger-6 { transition-delay: 0.6s; }
+        
+        .hero-cta {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            box-shadow: var(--shadow-xl);
+            transition: all 0.3s ease;
+        }
+        
+        .hero-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(59, 130, 246, 0.4);
+        }
+        
+        .calendly-cta {
+            background: linear-gradient(135deg, #6366f1, #4f46e5);
+            box-shadow: var(--shadow-xl);
+            transition: all 0.3s ease;
+        }
+        
+        .calendly-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(99, 102, 241, 0.4);
+        }
+        
+        .final-cta {
+            background: linear-gradient(135deg, #059669, #047857);
+            box-shadow: var(--shadow-2xl);
+            transition: all 0.3s ease;
+        }
+        
+        .final-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(5, 150, 105, 0.5);
+        }
+        
+        .sticky-cta {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 40;
+            background: linear-gradient(135deg, #6366f1, #4f46e5);
+            box-shadow: var(--shadow-2xl);
+            transition: all 0.3s ease;
+        }
+        
+        .sticky-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(99, 102, 241, 0.5);
+        }
+        
+        @media (max-width: 768px) {
+            .sticky-cta {
+                bottom: 10px;
+                right: 10px;
+                left: 10px;
+                text-align: center;
+            }
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+            border-radius: 4px;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+        }
+    </style>
+</head>
+<body class="font-montserrat text-white min-h-screen" style="background-color: #0f1211;">
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link" data-i18n="skip.content">Saltar al contenido</a>
+    
+    <!-- Language Switcher -->
+    <div class="fixed top-4 right-4 z-50">
+        <div class="flex gap-1 bg-white/10 backdrop-blur-sm rounded-full p-1">
+            <button onclick="changeLanguage('es')" class="lang-btn px-2 py-1 text-xs font-medium rounded-full transition-all duration-300 bg-white/20 text-white focus:outline-none focus:ring-2 focus:ring-white/50" data-lang="es" aria-label="Cambiar idioma a español" aria-pressed="true">ES</button>
+            <button onclick="changeLanguage('en')" class="lang-btn px-2 py-1 text-xs font-medium rounded-full transition-all duration-300 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/50" data-lang="en" aria-label="Change language to English" aria-pressed="false">EN</button>
+            <button onclick="changeLanguage('fr')" class="lang-btn px-2 py-1 text-xs font-medium rounded-full transition-all duration-300 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/50" data-lang="fr" aria-label="Changer la langue en français" aria-pressed="false">FR</button>
+            <button onclick="changeLanguage('it')" class="lang-btn px-2 py-1 text-xs font-medium rounded-full transition-all duration-300 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/50" data-lang="it" aria-label="Cambia lingua in italiano" aria-pressed="false">IT</button>
+            <button onclick="changeLanguage('de')" class="lang-btn px-2 py-1 text-xs font-medium rounded-full transition-all duration-300 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/50" data-lang="de" aria-label="Sprache zu Deutsch ändern" aria-pressed="false">DE</button>
+        </div>
+    </div>
+
+    <!-- Sticky CTA for Mobile -->
+    <div class="sticky-cta md:hidden">
+        <a href="https://calendly.com/businessbots-info/financial-consultation?utm_source=landing_sticky" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="block text-white font-semibold px-4 py-3 rounded-full text-sm focus:outline-none focus:ring-4 focus:ring-primary/50" 
+           data-i18n="cta.calendly">
+            📅 Agendar Consulta
+        </a>
+    </div>
+
+    <main id="main-content" class="max-w-4xl mx-auto px-6 py-16 space-y-16">
+        <!-- Hero Section -->
+        <section class="fade-in bg-white/5 backdrop-blur-sm rounded-2xl shadow-xl p-12 text-center">
+            <div class="mb-8">
+                <img src="https://res.cloudinary.com/dxhef6dju/image/upload/v1755725396/ChatGPT_Image_Apr_16_2025_12_31_00_AM_pbed1s.png" 
+                     alt="Business Bots Solutions Logo" 
+                     class="mx-auto h-20 md:h-24 w-20 md:w-24 object-cover rounded-full border-2 border-white/20 shadow-lg"
+                     onerror="this.style.display='none'; console.log('Logo failed to load');">
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 text-shadow leading-tight max-w-3xl mx-auto" data-i18n="hero.title">
+                Consultoría Estratégica para tu Negocio
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 text-white/90 leading-relaxed max-w-2xl mx-auto" data-i18n="hero.subtitle">
+                Convierte tu idea o empresa en un sistema inteligente. Todo empieza con una sesión de 2 horas.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://calendly.com/businessbots-info/financial-consultation?utm_source=landing_hero" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="calendly-cta text-white font-semibold px-8 py-4 rounded-full text-lg focus:outline-none focus:ring-4 focus:ring-primary/50 focus-visible:ring-4 focus-visible:ring-primary/50" 
+                   data-i18n="cta.calendly">
+                    📅 Agendar Consulta
+                </a>
+                <button onclick="scheduleConsultation()" class="hero-cta text-white font-semibold px-8 py-4 rounded-full text-lg focus:outline-none focus:ring-4 focus:ring-blue-300/50 focus-visible:ring-4 focus-visible:ring-blue-300/50" data-i18n="cta.whatsapp">
+                    📱 Contactar por WhatsApp
+                </button>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="fade-in stagger-1 bg-white/5 backdrop-blur-sm rounded-2xl shadow-xl p-12">
+            <h2 class="text-3xl font-bold mb-8 text-center text-shadow" data-i18n="benefits.title">
+                Qué incluye tu sesión
+            </h2>
+            <ul class="space-y-6 max-w-2xl mx-auto">
+                <li class="fade-in stagger-1 flex items-start gap-4">
+                    <span class="text-green-400 text-xl font-bold mt-1">✅</span>
+                    <span class="text-lg text-white/90" data-i18n="benefits.item1">Diagnóstico técnico y comercial adaptado a tu sector</span>
+                </li>
+                <li class="fade-in stagger-2 flex items-start gap-4">
+                    <span class="text-green-400 text-xl font-bold mt-1">✅</span>
+                    <span class="text-lg text-white/90" data-i18n="benefits.item2">Propuesta personalizada con soluciones viables</span>
+                </li>
+                <li class="fade-in stagger-3 flex items-start gap-4">
+                    <span class="text-green-400 text-xl font-bold mt-1">✅</span>
+                    <span class="text-lg text-white/90" data-i18n="benefits.item3">Revisión visual (logo, marca o interfaz)</span>
+                </li>
+                <li class="fade-in stagger-4 flex items-start gap-4">
+                    <span class="text-green-400 text-xl font-bold mt-1">✅</span>
+                    <span class="text-lg text-white/90" data-i18n="benefits.item4">Entregables PDF al finalizar la sesión</span>
+                </li>
+                <li class="fade-in stagger-5 flex items-start gap-4">
+                    <span class="text-green-400 text-xl font-bold mt-1">✅</span>
+                    <span class="text-lg text-white/90 font-semibold" data-i18n="benefits.item5">Bonus: hasta 2 meses de soporte gratis si activas proyecto</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Use Cases Section -->
+        <section class="fade-in stagger-2 bg-white/5 backdrop-blur-sm rounded-2xl shadow-xl p-12">
+            <h2 class="text-3xl font-bold mb-8 text-center text-shadow" data-i18n="usecases.title">
+                ¿Es para ti?
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+                <div class="fade-in stagger-1 flex items-start gap-4">
+                    <span class="text-blue-400 text-xl font-bold mt-1">✔️</span>
+                    <span class="text-lg text-white/90" data-i18n="usecases.case1">Ya tienes una empresa y quieres escalar con tecnología</span>
+                </div>
+                <div class="fade-in stagger-2 flex items-start gap-4">
+                    <span class="text-blue-400 text-xl font-bold mt-1">✔️</span>
+                    <span class="text-lg text-white/90" data-i18n="usecases.case2">Tienes una idea y presupuesto inicial</span>
+                </div>
+                <div class="fade-in stagger-3 flex items-start gap-4">
+                    <span class="text-blue-400 text-xl font-bold mt-1">✔️</span>
+                    <span class="text-lg text-white/90" data-i18n="usecases.case3">Estás validando un modelo de negocio antes de lanzarlo</span>
+                </div>
+                <div class="fade-in stagger-4 flex items-start gap-4">
+                    <span class="text-blue-400 text-xl font-bold mt-1">✔️</span>
+                    <span class="text-lg text-white/90" data-i18n="usecases.case4">No sabes por dónde empezar y quieres claridad estratégica</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sectors Section -->
+        <section class="fade-in stagger-3 bg-white/5 backdrop-blur-sm rounded-2xl shadow-xl p-12">
+            <h2 class="text-3xl font-bold mb-8 text-center text-shadow" data-i18n="sectors.title">
+                Sectores que transformamos
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div class="fade-in stagger-1 bg-white/5 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:bg-white/10">
+                    <img src="https://res.cloudinary.com/dxhef6dju/image/upload/v1758113161/5_jsnril.jpg" 
+                         alt="Restaurantes" 
+                         class="w-full h-32 md:h-40 object-cover transition-opacity duration-300 hover:opacity-90"
+                         onerror="this.style.display='none';">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-center text-white/90" data-i18n="sectors.restaurants">Restaurantes</h3>
+                    </div>
+                </div>
+                <div class="fade-in stagger-2 bg-white/5 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:bg-white/10">
+                    <img src="https://res.cloudinary.com/dxhef6dju/image/upload/v1758113161/Эстетика_парикмахера__po7gvt.jpg" 
+                         alt="Peluquerías & Estética" 
+                         class="w-full h-32 md:h-40 object-cover transition-opacity duration-300 hover:opacity-90"
+                         onerror="this.style.display='none';">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-center text-white/90" data-i18n="sectors.beauty">Peluquerías & Estética</h3>
+                    </div>
+                </div>
+                <div class="fade-in stagger-3 bg-white/5 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:bg-white/10">
+                    <img src="https://res.cloudinary.com/dxhef6dju/image/upload/v1758113161/6_kwnzxg.jpg" 
+                         alt="Clínicas & Consultas" 
+                         class="w-full h-32 md:h-40 object-cover transition-opacity duration-300 hover:opacity-90"
+                         onerror="this.style.display='none';">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-center text-white/90" data-i18n="sectors.clinics">Clínicas & Consultas</h3>
+                    </div>
+                </div>
+                <div class="fade-in stagger-4 bg-white/5 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:bg-white/10">
+                    <img src="https://res.cloudinary.com/dxhef6dju/image/upload/v1758113161/Gym_room_Photos_-_Download_Free_High-Quality_Pictures___Freepik_aslmp6.jpg" 
+                         alt="Gimnasios & Fitness" 
+                         class="w-full h-32 md:h-40 object-cover transition-opacity duration-300 hover:opacity-90"
+                         onerror="this.style.display='none';">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-center text-white/90" data-i18n="sectors.fitness">Gimnasios & Fitness</h3>
+                    </div>
+                </div>
+                <div class="fade-in stagger-5 bg-white/5 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:bg-white/10">
+                    <img src="https://res.cloudinary.com/dxhef6dju/image/upload/v1758113161/7_ezvzwn.jpg" 
+                         alt="Servicios Profesionales" 
+                         class="w-full h-32 md:h-40 object-cover transition-opacity duration-300 hover:opacity-90"
+                         onerror="this.style.display='none';">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-center text-white/90" data-i18n="sectors.professional">Servicios Profesionales</h3>
+                    </div>
+                </div>
+                <div class="fade-in stagger-6 bg-white/5 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:bg-white/10">
+                    <img src="https://res.cloudinary.com/dxhef6dju/image/upload/v1758113544/colette___Wonderwall_ygke9e.jpg" 
+                         alt="Tiendas & Retail" 
+                         class="w-full h-32 md:h-40 object-cover transition-opacity duration-300 hover:opacity-90"
+                         onerror="this.style.display='none';">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-center text-white/90" data-i18n="sectors.retail">Tiendas & Retail</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Business Bots Section -->
+        <section class="fade-in stagger-4 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl shadow-xl p-12">
+            <h2 class="text-3xl font-bold mb-8 text-center text-shadow" data-i18n="about.title">
+                Quiénes somos
+            </h2>
+            <div class="max-w-3xl mx-auto space-y-6 text-white/90">
+                <p class="text-lg leading-relaxed text-center" data-i18n="about.description">
+                    Business Bots Solutions es una consultoría tecnológica con sede en Palma de Mallorca. Ayudamos a empresas a optimizar operaciones internas, comunicación digital y atención al cliente usando automatización, sistemas de IA y diseño de workflows personalizados.
+                </p>
+                <div class="grid md:grid-cols-2 gap-8 mt-12">
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-semibold text-blue-300" data-i18n="about.problems.title">Problemas que resolvemos</h3>
+                        <ul class="space-y-2 text-white/80">
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-400 mt-1">•</span>
+                                <span data-i18n="about.problems.item1">Procesos manuales que consumen tiempo</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-400 mt-1">•</span>
+                                <span data-i18n="about.problems.item2">Comunicación deficiente entre equipos</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-400 mt-1">•</span>
+                                <span data-i18n="about.problems.item3">Seguimientos perdidos y tareas desorganizadas</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-400 mt-1">•</span>
+                                <span data-i18n="about.problems.item4">Atención al cliente ineficiente</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-semibold text-green-300" data-i18n="about.solutions.title">Qué nos diferencia</h3>
+                        <ul class="space-y-2 text-white/80">
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-400 mt-1">✓</span>
+                                <span data-i18n="about.solutions.item1">Estrategia + Ejecución</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-400 mt-1">✓</span>
+                                <span data-i18n="about.solutions.item2">Soporte humano potenciado por automatización</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-400 mt-1">✓</span>
+                                <span data-i18n="about.solutions.item3">Herramientas accesibles y escalables</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-400 mt-1">✓</span>
+                                <span data-i18n="about.solutions.item4">Velocidad, precisión y soporte real</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="fade-in stagger-5 bg-gradient-to-r from-white/5 to-white/10 backdrop-blur-sm rounded-2xl shadow-xl p-12 text-center">
+            <blockquote class="text-xl md:text-2xl italic text-white/95 mb-6 leading-relaxed max-w-2xl mx-auto" data-i18n="testimonial.quote">
+                "La consultoría con Business Bots nos dio claridad desde el primer minuto. Recibimos una propuesta concreta, útil y alineada al negocio."
+            </blockquote>
+            <cite class="text-white/80 font-medium" data-i18n="testimonial.author">– Cliente real</cite>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="fade-in stagger-6 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl shadow-2xl p-12 text-center border border-white/10">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-shadow" data-i18n="finalcta.title">
+                ¿Listo para avanzar?
+            </h2>
+            <p class="text-xl mb-8 text-white/90 leading-relaxed max-w-2xl mx-auto" data-i18n="finalcta.subtitle">
+                En solo 2 horas tendrás una visión clara de cómo escalar o lanzar tu negocio.
+            </p>
+            <p class="text-sm mb-8 text-white/80 italic max-w-lg mx-auto" data-i18n="finalcta.security">
+                No es una reunión de ventas. Es claridad sobre tu negocio.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://calendly.com/businessbots-info/financial-consultation?utm_source=landing_final" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="calendly-cta text-white font-bold px-10 py-5 rounded-full text-xl focus:outline-none focus:ring-4 focus:ring-primary/50 focus-visible:ring-4 focus-visible:ring-primary/50" 
+                   data-i18n="cta.calendly">
+                    📅 Agendar Consulta
+                </a>
+                <button onclick="scheduleConsultation()" class="final-cta text-white font-bold px-10 py-5 rounded-full text-xl focus:outline-none focus:ring-4 focus:ring-green-300/50 focus-visible:ring-4 focus-visible:ring-green-300/50" data-i18n="cta.whatsapp">
+                    📱 Contactar por WhatsApp
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="fade-in stagger-6 max-w-4xl mx-auto px-6 py-12 text-center border-t border-white/10 mt-16">
+        <div class="space-y-4">
+            <p class="text-white/80" data-i18n="footer.copyright">© 2025 Business Bots Solutions</p>
+            <p class="text-white/70">
+                <span data-i18n="footer.email">📧 businessbots.info@gmail.com</span>
+            </p>
+            <button onclick="togglePrivacyPolicy(event)" aria-haspopup="dialog" aria-controls="privacyModal" aria-expanded="false" class="text-white/70 hover:text-white/90 transition-colors duration-300 underline text-sm focus:outline-none focus:ring-2 focus:ring-white/50 focus-visible:ring-2 focus-visible:ring-white/50" data-i18n="footer.privacy">
+                Política de Privacidad
+            </button>
+        </div>
+        
+        <!-- Privacy Policy Modal -->
+        <div id="privacyModal" class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+             role="dialog" aria-modal="true" aria-labelledby="privacyTitle" tabindex="-1">
+            <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 max-w-2xl max-h-[80vh] overflow-y-auto border border-white/10">
+                <h3 id="privacyTitle" class="text-2xl font-bold mb-4" data-i18n="privacy.title">Política de Privacidad</h3>
+                <div class="text-white/90 space-y-4 text-left">
+                    <p><strong data-i18n="privacy.responsible">Responsable:</strong> <span data-i18n="privacy.responsible.content">Business Bots Solutions, businessbots.info@gmail.com</span></p>
+                    <p><strong data-i18n="privacy.purpose">Finalidad:</strong> <span data-i18n="privacy.purpose.content">Agendar y gestionar la consulta estratégica solicitada.</span></p>
+                    <p><strong data-i18n="privacy.legal">Base jurídica:</strong> <span data-i18n="privacy.legal.content">Consentimiento del interesado.</span></p>
+                    <p><strong data-i18n="privacy.rights">Derechos:</strong> <span data-i18n="privacy.rights.content">Acceso, rectificación, supresión, limitación, portabilidad y oposición. Contacto: businessbots.info@gmail.com</span></p>
+                    <p data-i18n="privacy.content">
+                        Business Bots Solutions cumple con el Reglamento General de Protección de Datos (RGPD). Los datos personales recopilados durante la consultoría se utilizan únicamente para proporcionar el servicio solicitado y no se comparten con terceros sin consentimiento explícito.
+                    </p>
+                </div>
+                <button onclick="togglePrivacyPolicy()" class="mt-6 bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full transition-colors duration-300 focus:outline-none focus:ring-4 focus:ring-blue-300/50 focus-visible:ring-4 focus-visible:ring-blue-300/50" data-i18n="privacy.close">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ARIA Live Region for Screen Readers -->
+    <div aria-live="polite" aria-atomic="true" class="sr-only" id="announcements"></div>
+
+    <script>
+        // Translations with complete coverage
+        const translations = {
+            es: {
+                "skip.content": "Saltar al contenido",
+                "hero.title": "Consultoría Estratégica para tu Negocio",
+                "hero.subtitle": "Convierte tu idea o empresa en un sistema inteligente. Todo empieza con una sesión de 2 horas.",
+                "cta.calendly": "📅 Agendar Consulta",
+                "cta.whatsapp": "📱 Contactar por WhatsApp",
+                "benefits.title": "Qué incluye tu sesión",
+                "benefits.item1": "Diagnóstico técnico y comercial adaptado a tu sector",
+                "benefits.item2": "Propuesta personalizada con soluciones viables",
+                "benefits.item3": "Revisión visual (logo, marca o interfaz)",
+                "benefits.item4": "Entregables PDF al finalizar la sesión",
+                "benefits.item5": "Bonus: hasta 2 meses de soporte gratis si activas proyecto",
+                "usecases.title": "¿Es para ti?",
+                "usecases.case1": "Ya tienes una empresa y quieres escalar con tecnología",
+                "usecases.case2": "Tienes una idea y presupuesto inicial",
+                "usecases.case3": "Estás validando un modelo de negocio antes de lanzarlo",
+                "usecases.case4": "No sabes por dónde empezar y quieres claridad estratégica",
+                "sectors.title": "Sectores que transformamos",
+                "sectors.restaurants": "Restaurantes",
+                "sectors.beauty": "Peluquerías & Estética",
+                "sectors.clinics": "Clínicas & Consultas",
+                "sectors.fitness": "Gimnasios & Fitness",
+                "sectors.professional": "Servicios Profesionales",
+                "sectors.retail": "Tiendas & Retail",
+                "about.title": "Quiénes somos",
+                "about.description": "Business Bots Solutions es una consultoría tecnológica con sede en Palma de Mallorca. Ayudamos a empresas a optimizar operaciones internas, comunicación digital y atención al cliente usando automatización, sistemas de IA y diseño de workflows personalizados.",
+                "about.problems.title": "Problemas que resolvemos",
+                "about.problems.item1": "Procesos manuales que consumen tiempo",
+                "about.problems.item2": "Comunicación deficiente entre equipos",
+                "about.problems.item3": "Seguimientos perdidos y tareas desorganizadas",
+                "about.problems.item4": "Atención al cliente ineficiente",
+                "about.solutions.title": "Qué nos diferencia",
+                "about.solutions.item1": "Estrategia + Ejecución",
+                "about.solutions.item2": "Soporte humano potenciado por automatización",
+                "about.solutions.item3": "Herramientas accesibles y escalables",
+                "about.solutions.item4": "Velocidad, precisión y soporte real",
+                "testimonial.quote": "\"La consultoría con Business Bots nos dio claridad desde el primer minuto. Recibimos una propuesta concreta, útil y alineada al negocio.\"",
+                "testimonial.author": "– Cliente real",
+                "finalcta.title": "¿Listo para avanzar?",
+                "finalcta.subtitle": "En solo 2 horas tendrás una visión clara de cómo escalar o lanzar tu negocio.",
+                "finalcta.security": "No es una reunión de ventas. Es claridad sobre tu negocio.",
+                "footer.copyright": "© 2025 Business Bots Solutions",
+                "footer.email": "📧 businessbots.info@gmail.com",
+                "footer.privacy": "Política de Privacidad",
+                "privacy.title": "Política de Privacidad",
+                "privacy.responsible": "Responsable",
+                "privacy.responsible.content": "Business Bots Solutions, businessbots.info@gmail.com",
+                "privacy.purpose": "Finalidad",
+                "privacy.purpose.content": "Agendar y gestionar la consulta estratégica solicitada.",
+                "privacy.legal": "Base jurídica",
+                "privacy.legal.content": "Consentimiento del interesado.",
+                "privacy.rights": "Derechos",
+                "privacy.rights.content": "Acceso, rectificación, supresión, limitación, portabilidad y oposición. Contacto: businessbots.info@gmail.com",
+                "privacy.content": "Business Bots Solutions cumple con el Reglamento General de Protección de Datos (RGPD). Los datos personales recopilados durante la consultoría se utilizan únicamente para proporcionar el servicio solicitado y no se comparten con terceros sin consentimiento explícito.",
+                "privacy.close": "Cerrar"
+            },
+            en: {
+                "skip.content": "Skip to content",
+                "hero.title": "Strategic Consulting for Your Business",
+                "hero.subtitle": "Turn your idea or company into an intelligent system. It all starts with a 2-hour session.",
+                "cta.calendly": "📅 Schedule Consultation",
+                "cta.whatsapp": "📱 Contact via WhatsApp",
+                "benefits.title": "What your session includes",
+                "benefits.item1": "Technical and commercial diagnosis adapted to your sector",
+                "benefits.item2": "Personalized proposal with viable solutions",
+                "benefits.item3": "Visual review (logo, brand or interface)",
+                "benefits.item4": "PDF deliverables at the end of the session",
+                "benefits.item5": "Bonus: up to 2 months of free support if you activate project",
+                "usecases.title": "Is it for you?",
+                "usecases.case1": "You already have a company and want to scale with technology",
+                "usecases.case2": "You have an idea and initial budget",
+                "usecases.case3": "You're validating a business model before launching",
+                "usecases.case4": "You don't know where to start and want strategic clarity",
+                "sectors.title": "Sectors we transform",
+                "sectors.restaurants": "Restaurants",
+                "sectors.beauty": "Beauty & Aesthetics",
+                "sectors.clinics": "Clinics & Consultations",
+                "sectors.fitness": "Gyms & Fitness",
+                "sectors.professional": "Professional Services",
+                "sectors.retail": "Stores & Retail",
+                "about.title": "Who we are",
+                "about.description": "Business Bots Solutions is a tech-driven consultancy based in Palma de Mallorca. We help businesses optimize internal operations, digital communication, and customer support using automation, AI systems, and custom workflow design.",
+                "about.problems.title": "Problems we solve",
+                "about.problems.item1": "Time-consuming manual processes",
+                "about.problems.item2": "Poor communication between teams",
+                "about.problems.item3": "Missed follow-ups and disorganized tasks",
+                "about.problems.item4": "Inefficient customer service",
+                "about.solutions.title": "What makes us different",
+                "about.solutions.item1": "Strategy + Execution",
+                "about.solutions.item2": "Human support powered by automation",
+                "about.solutions.item3": "Accessible and scalable tools",
+                "about.solutions.item4": "Speed, precision, and real support",
+                "testimonial.quote": "\"The consultation with Business Bots gave us clarity from the first minute. We received a concrete, useful proposal aligned with the business.\"",
+                "testimonial.author": "– Real client",
+                "finalcta.title": "Ready to move forward?",
+                "finalcta.subtitle": "In just 2 hours you'll have a clear vision of how to scale or launch your business.",
+                "finalcta.security": "It's not a sales meeting. It's clarity about your business.",
+                "footer.copyright": "© 2025 Business Bots Solutions",
+                "footer.email": "📧 businessbots.info@gmail.com",
+                "footer.privacy": "Privacy Policy",
+                "privacy.title": "Privacy Policy",
+                "privacy.responsible": "Responsible",
+                "privacy.responsible.content": "Business Bots Solutions, businessbots.info@gmail.com",
+                "privacy.purpose": "Purpose",
+                "privacy.purpose.content": "Schedule and manage the requested strategic consultation.",
+                "privacy.legal": "Legal basis",
+                "privacy.legal.content": "Consent of the interested party.",
+                "privacy.rights": "Rights",
+                "privacy.rights.content": "Access, rectification, deletion, limitation, portability and opposition. Contact: businessbots.info@gmail.com",
+                "privacy.content": "Business Bots Solutions complies with the General Data Protection Regulation (GDPR). Personal data collected during consultation is used solely to provide the requested service and is not shared with third parties without explicit consent.",
+                "privacy.close": "Close"
+            },
+            fr: {
+                "skip.content": "Aller au contenu",
+                "hero.title": "Conseil Stratégique pour Votre Entreprise",
+                "hero.subtitle": "Transformez votre idée ou entreprise en système intelligent. Tout commence par une session de 2 heures.",
+                "cta.calendly": "📅 Planifier une Consultation",
+                "cta.whatsapp": "📱 Contacter via WhatsApp",
+                "benefits.title": "Ce que comprend votre session",
+                "benefits.item1": "Diagnostic technique et commercial adapté à votre secteur",
+                "benefits.item2": "Proposition personnalisée avec solutions viables",
+                "benefits.item3": "Révision visuelle (logo, marque ou interface)",
+                "benefits.item4": "Livrables PDF à la fin de la session",
+                "benefits.item5": "Bonus: jusqu'à 2 mois de support gratuit si vous activez le projet",
+                "usecases.title": "Est-ce pour vous?",
+                "usecases.case1": "Vous avez déjà une entreprise et voulez évoluer avec la technologie",
+                "usecases.case2": "Vous avez une idée et un budget initial",
+                "usecases.case3": "Vous validez un modèle d'affaires avant le lancement",
+                "usecases.case4": "Vous ne savez pas par où commencer et voulez une clarté stratégique",
+                "sectors.title": "Secteurs que nous transformons",
+                "sectors.restaurants": "Restaurants",
+                "sectors.beauty": "Beauté & Esthétique",
+                "sectors.clinics": "Cliniques & Consultations",
+                "sectors.fitness": "Gymnases & Fitness",
+                "sectors.professional": "Services Professionnels",
+                "sectors.retail": "Magasins & Commerce",
+                "about.title": "Qui nous sommes",
+                "about.description": "Business Bots Solutions est une consultance technologique basée à Palma de Majorque. Nous aidons les entreprises à optimiser les opérations internes, la communication digitale et le support client en utilisant l'automatisation, les systèmes IA et la conception de workflows personnalisés.",
+                "about.problems.title": "Problèmes que nous résolvons",
+                "about.problems.item1": "Processus manuels chronophages",
+                "about.problems.item2": "Communication déficiente entre équipes",
+                "about.problems.item3": "Suivis manqués et tâches désorganisées",
+                "about.problems.item4": "Service client inefficace",
+                "about.solutions.title": "Ce qui nous différencie",
+                "about.solutions.item1": "Stratégie + Exécution",
+                "about.solutions.item2": "Support humain alimenté par l'automatisation",
+                "about.solutions.item3": "Outils accessibles et évolutifs",
+                "about.solutions.item4": "Vitesse, précision et support réel",
+                "testimonial.quote": "\"La consultation avec Business Bots nous a donné de la clarté dès la première minute. Nous avons reçu une proposition concrète, utile et alignée sur l'entreprise.\"",
+                "testimonial.author": "– Client réel",
+                "finalcta.title": "Prêt à avancer?",
+                "finalcta.subtitle": "En seulement 2 heures, vous aurez une vision claire de comment développer ou lancer votre entreprise.",
+                "finalcta.security": "Ce n'est pas une réunion de vente. C'est de la clarté sur votre entreprise.",
+                "footer.copyright": "© 2025 Business Bots Solutions",
+                "footer.email": "📧 businessbots.info@gmail.com",
+                "footer.privacy": "Politique de Confidentialité",
+                "privacy.title": "Politique de Confidentialité",
+                "privacy.responsible": "Responsable",
+                "privacy.responsible.content": "Business Bots Solutions, businessbots.info@gmail.com",
+                "privacy.purpose": "Finalité",
+                "privacy.purpose.content": "Programmer et gérer la consultation stratégique demandée.",
+                "privacy.legal": "Base légale",
+                "privacy.legal.content": "Consentement de la personne concernée.",
+                "privacy.rights": "Droits",
+                "privacy.rights.content": "Accès, rectification, suppression, limitation, portabilité et opposition. Contact: businessbots.info@gmail.com",
+                "privacy.content": "Business Bots Solutions respecte le Règlement Général sur la Protection des Données (RGPD). Les données personnelles collectées lors de la consultation sont utilisées uniquement pour fournir le service demandé et ne sont pas partagées avec des tiers sans consentement explicite.",
+                "privacy.close": "Fermer"
+            },
+            it: {
+                "skip.content": "Vai al contenuto",
+                "hero.title": "Consulenza Strategica per la Tua Azienda",
+                "hero.subtitle": "Trasforma la tua idea o azienda in un sistema intelligente. Tutto inizia con una sessione di 2 ore.",
+                "cta.calendly": "📅 Prenota Consulenza",
+                "cta.whatsapp": "📱 Contatta via WhatsApp",
+                "benefits.title": "Cosa include la tua sessione",
+                "benefits.item1": "Diagnosi tecnica e commerciale adattata al tuo settore",
+                "benefits.item2": "Proposta personalizzata con soluzioni praticabili",
+                "benefits.item3": "Revisione visiva (logo, brand o interfaccia)",
+                "benefits.item4": "Deliverable PDF alla fine della sessione",
+                "benefits.item5": "Bonus: fino a 2 mesi di supporto gratuito se attivi il progetto",
+                "usecases.title": "È per te?",
+                "usecases.case1": "Hai già un'azienda e vuoi scalare con la tecnologia",
+                "usecases.case2": "Hai un'idea e un budget iniziale",
+                "usecases.case3": "Stai validando un modello di business prima del lancio",
+                "usecases.case4": "Non sai da dove iniziare e vuoi chiarezza strategica",
+                "sectors.title": "Settori che trasformiamo",
+                "sectors.restaurants": "Ristoranti",
+                "sectors.beauty": "Bellezza & Estetica",
+                "sectors.clinics": "Cliniche & Consultazioni",
+                "sectors.fitness": "Palestre & Fitness",
+                "sectors.professional": "Servizi Professionali",
+                "sectors.retail": "Negozi & Retail",
+                "about.title": "Chi siamo",
+                "about.description": "Business Bots Solutions è una consulenza tecnologica con sede a Palma di Maiorca. Aiutiamo le aziende a ottimizzare le operazioni interne, la comunicazione digitale e il supporto clienti utilizzando automazione, sistemi AI e progettazione di workflow personalizzati.",
+                "about.problems.title": "Problemi che risolviamo",
+                "about.problems.item1": "Processi manuali che richiedono tempo",
+                "about.problems.item2": "Comunicazione scarsa tra team",
+                "about.problems.item3": "Follow-up persi e compiti disorganizzati",
+                "about.problems.item4": "Servizio clienti inefficiente",
+                "about.solutions.title": "Cosa ci differenzia",
+                "about.solutions.item1": "Strategia + Esecuzione",
+                "about.solutions.item2": "Supporto umano potenziato dall'automazione",
+                "about.solutions.item3": "Strumenti accessibili e scalabili",
+                "about.solutions.item4": "Velocità, precisione e supporto reale",
+                "testimonial.quote": "\"La consulenza con Business Bots ci ha dato chiarezza dal primo minuto. Abbiamo ricevuto una proposta concreta, utile e allineata al business.\"",
+                "testimonial.author": "– Cliente reale",
+                "finalcta.title": "Pronto ad andare avanti?",
+                "finalcta.subtitle": "In sole 2 ore avrai una visione chiara di come scalare o lanciare la tua azienda.",
+                "finalcta.security": "Non è una riunione di vendita. È chiarezza sulla tua azienda.",
+                "footer.copyright": "© 2025 Business Bots Solutions",
+                "footer.email": "📧 businessbots.info@gmail.com",
+                "footer.privacy": "Politica sulla Privacy",
+                "privacy.title": "Politica sulla Privacy",
+                "privacy.responsible": "Responsabile",
+                "privacy.responsible.content": "Business Bots Solutions, businessbots.info@gmail.com",
+                "privacy.purpose": "Finalità",
+                "privacy.purpose.content": "Programmare e gestire la consulenza strategica richiesta.",
+                "privacy.legal": "Base legale",
+                "privacy.legal.content": "Consenso dell'interessato.",
+                "privacy.rights": "Diritti",
+                "privacy.rights.content": "Accesso, rettifica, cancellazione, limitazione, portabilità e opposizione. Contatto: businessbots.info@gmail.com",
+                "privacy.content": "Business Bots Solutions rispetta il Regolamento Generale sulla Protezione dei Dati (GDPR). I dati personali raccolti durante la consulenza sono utilizzati esclusivamente per fornire il servizio richiesto e non sono condivisi con terze parti senza consenso esplicito.",
+                "privacy.close": "Chiudi"
+            },
+            de: {
+                "skip.content": "Zum Inhalt springen",
+                "hero.title": "Strategische Beratung für Ihr Unternehmen",
+                "hero.subtitle": "Verwandeln Sie Ihre Idee oder Ihr Unternehmen in ein intelligentes System. Alles beginnt mit einer 2-stündigen Sitzung.",
+                "cta.calendly": "📅 Beratung Buchen",
+                "cta.whatsapp": "📱 Kontakt via WhatsApp",
+                "benefits.title": "Was Ihre Sitzung beinhaltet",
+                "benefits.item1": "Technische und kommerzielle Diagnose angepasst an Ihren Sektor",
+                "benefits.item2": "Personalisierter Vorschlag mit praktikablen Lösungen",
+                "benefits.item3": "Visuelle Überprüfung (Logo, Marke oder Interface)",
+                "benefits.item4": "PDF-Deliverables am Ende der Sitzung",
+                "benefits.item5": "Bonus: bis zu 2 Monate kostenloser Support bei Projektaktivierung",
+                "usecases.title": "Ist es für Sie?",
+                "usecases.case1": "Sie haben bereits ein Unternehmen und möchten mit Technologie skalieren",
+                "usecases.case2": "Sie haben eine Idee und ein Anfangsbudget",
+                "usecases.case3": "Sie validieren ein Geschäftsmodell vor dem Launch",
+                "usecases.case4": "Sie wissen nicht, wo Sie anfangen sollen und wollen strategische Klarheit",
+                "sectors.title": "Sektoren, die wir transformieren",
+                "sectors.restaurants": "Restaurants",
+                "sectors.beauty": "Schönheit & Ästhetik",
+                "sectors.clinics": "Kliniken & Beratungen",
+                "sectors.fitness": "Fitnessstudios & Fitness",
+                "sectors.professional": "Professionelle Dienstleistungen",
+                "sectors.retail": "Geschäfte & Einzelhandel",
+                "about.title": "Wer wir sind",
+                "about.description": "Business Bots Solutions ist eine technologieorientierte Beratung mit Sitz in Palma de Mallorca. Wir helfen Unternehmen dabei, interne Abläufe, digitale Kommunikation und Kundensupport durch Automatisierung, KI-Systeme und maßgeschneiderte Workflow-Designs zu optimieren.",
+                "about.problems.title": "Probleme, die wir lösen",
+                "about.problems.item1": "Zeitaufwändige manuelle Prozesse",
+                "about.problems.item2": "Schlechte Kommunikation zwischen Teams",
+                "about.problems.item3": "Verpasste Follow-ups und unorganisierte Aufgaben",
+                "about.problems.item4": "Ineffizienter Kundenservice",
+                "about.solutions.title": "Was uns unterscheidet",
+                "about.solutions.item1": "Strategie + Ausführung",
+                "about.solutions.item2": "Menschlicher Support durch Automatisierung verstärkt",
+                "about.solutions.item3": "Zugängliche und skalierbare Tools",
+                "about.solutions.item4": "Geschwindigkeit, Präzision und echter Support",
+                "testimonial.quote": "\"Die Beratung mit Business Bots gab uns vom ersten Moment an Klarheit. Wir erhielten einen konkreten, nützlichen und auf das Geschäft abgestimmten Vorschlag.\"",
+                "testimonial.author": "– Echter Kunde",
+                "finalcta.title": "Bereit voranzugehen?",
+                "finalcta.subtitle": "In nur 2 Stunden haben Sie eine klare Vision, wie Sie Ihr Unternehmen skalieren oder starten können.",
+                "finalcta.security": "Es ist kein Verkaufsgespräch. Es ist Klarheit über Ihr Unternehmen.",
+                "footer.copyright": "© 2025 Business Bots Solutions",
+                "footer.email": "📧 businessbots.info@gmail.com",
+                "footer.privacy": "Datenschutzrichtlinie",
+                "privacy.title": "Datenschutzrichtlinie",
+                "privacy.responsible": "Verantwortlicher",
+                "privacy.responsible.content": "Business Bots Solutions, businessbots.info@gmail.com",
+                "privacy.purpose": "Zweck",
+                "privacy.purpose.content": "Die angeforderte strategische Beratung planen und verwalten.",
+                "privacy.legal": "Rechtsgrundlage",
+                "privacy.legal.content": "Einwilligung der betroffenen Person.",
+                "privacy.rights": "Rechte",
+                "privacy.rights.content": "Zugang, Berichtigung, Löschung, Einschränkung, Übertragbarkeit und Widerspruch. Kontakt: businessbots.info@gmail.com",
+                "privacy.content": "Business Bots Solutions entspricht der Datenschutz-Grundverordnung (DSGVO). Während der Beratung gesammelte personenbezogene Daten werden ausschließlich zur Erbringung der angeforderten Dienstleistung verwendet und nicht ohne ausdrückliche Zustimmung an Dritte weitergegeben.",
+                "privacy.close": "Schließen"
+            }
+        };
+
+        let currentLanguage = 'es';
+        
+        // Persist language across visits
+        try {
+            const saved = localStorage.getItem('bb_lang');
+            if (saved && translations[saved]) currentLanguage = saved;
+        } catch (_) {}
+
+        // Language switching functionality with persistence and accessibility
+        function changeLanguage(lang) {
+            if (!translations[lang]) return;
+            
+            currentLanguage = lang;
+            document.documentElement.lang = lang;
+            
+            // Persist language choice
+            try { 
+                localStorage.setItem('bb_lang', lang); 
+            } catch (_) {}
+            
+            // Update active language button with ARIA
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                const isActive = btn.getAttribute('data-lang') === lang;
+                btn.classList.toggle('bg-white/20', isActive);
+                btn.classList.toggle('text-white', isActive);
+                btn.classList.toggle('hover:bg-white/10', !isActive);
+                btn.setAttribute('aria-pressed', String(isActive));
+            });
+            
+            // Update Open Graph locale
+            const ogLocale = document.querySelector('meta[property="og:locale"]');
+            if (ogLocale) {
+                const locales = { es: 'es_ES', en: 'en_US', fr: 'fr_FR', it: 'it_IT', de: 'de_DE' };
+                ogLocale.setAttribute('content', locales[lang] || 'es_ES');
+            }
+            
+            // Update all translatable elements with fallback
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                } else if (translations.es && translations.es[key]) {
+                    // Fallback to Spanish
+                    element.textContent = translations.es[key];
+                    console.warn(`Missing translation for ${key} in ${lang}, using Spanish fallback`);
+                }
+            });
+            
+            // Announce language change to screen readers
+            const announcements = document.getElementById('announcements');
+            if (announcements) {
+                const langNames = { es: 'Español', en: 'English', fr: 'Français', it: 'Italiano', de: 'Deutsch' };
+                announcements.textContent = `Idioma cambiado a ${langNames[lang] || lang}`;
+            }
+        }
+
+        // Schedule consultation with tracking and fallback
+        function scheduleConsultation() {
+            const messages = {
+                es: "Hola, quiero agendar mi sesión de consultoría estratégica de 2 horas con Business Bots. Origen: landing_es",
+                en: "Hello, I want to schedule my 2-hour strategic consultation session with Business Bots. Source: landing_en",
+                fr: "Bonjour, je veux programmer ma session de consultation stratégique de 2 heures avec Business Bots. Source: landing_fr",
+                it: "Ciao, voglio programmare la mia sessione di consulenza strategica di 2 ore con Business Bots. Fonte: landing_it",
+                de: "Hallo, ich möchte meine 2-stündige strategische Beratungssitzung mit Business Bots planen. Quelle: landing_de"
+            };
+            
+            const message = encodeURIComponent(messages[currentLanguage] || messages.es);
+            const whatsappUrl = `https://wa.me/34631690524?text=${message}`;
+            
+            // Track click event (privacy-first)
+            try {
+                if (navigator.sendBeacon) {
+                    navigator.sendBeacon('/api/track', JSON.stringify({
+                        event: 'whatsapp_click',
+                        language: currentLanguage,
+                        timestamp: Date.now()
+                    }));
+                }
+            } catch (_) {}
+            
+            // Try WhatsApp, fallback to email
+            try {
+                window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+            } catch (_) {
+                const subject = encodeURIComponent('Consulta Estratégica');
+                const body = encodeURIComponent(messages[currentLanguage] || messages.es);
+                window.location.href = `mailto:businessbots.info@gmail.com?subject=${subject}&body=${body}`;
+            }
+        }
+
+        // Privacy policy modal with focus management
+        let lastFocusedEl = null;
+        
+        function togglePrivacyPolicy(ev) {
+            const modal = document.getElementById('privacyModal');
+            const opening = modal.classList.contains('hidden');
+
+            // Toggle visibility
+            modal.classList.toggle('hidden');
+
+            // Update trigger aria-expanded if event came from the trigger
+            if (ev && ev.target && ev.target.matches('button[aria-controls="privacyModal"]')) {
+                ev.target.setAttribute('aria-expanded', String(opening));
+            }
+
+            if (opening) {
+                // Save last focused element to restore later
+                lastFocusedEl = document.activeElement;
+                // Focus the modal container
+                modal.focus();
+
+                // Focus first focusable inside
+                const focusables = modal.querySelectorAll('button, [href], input, textarea, select, [tabindex]:not([tabindex="-1"])');
+                if (focusables.length) focusables[0].focus();
+
+                // Trap focus inside the modal
+                modal.onkeydown = (e) => {
+                    if (e.key !== 'Tab') return;
+                    const items = Array.from(modal.querySelectorAll('button, [href], input, textarea, select, [tabindex]:not([tabindex="-1"])'))
+                        .filter(el => !el.hasAttribute('disabled'));
+                    if (!items.length) return;
+                    const first = items[0], last = items[items.length - 1];
+                    if (e.shiftKey && document.activeElement === first) { 
+                        e.preventDefault(); 
+                        last.focus(); 
+                    } else if (!e.shiftKey && document.activeElement === last) { 
+                        e.preventDefault(); 
+                        first.focus(); 
+                    }
+                };
+                
+                // Announce modal opening
+                const announcements = document.getElementById('announcements');
+                if (announcements) {
+                    announcements.textContent = translations[currentLanguage]['privacy.title'] || 'Política de Privacidad abierta';
+                }
+            } else {
+                // Restore focus to the last trigger
+                if (lastFocusedEl && typeof lastFocusedEl.focus === 'function') {
+                    lastFocusedEl.focus();
+                }
+                modal.onkeydown = null;
+            }
+        }
+
+        // Intersection Observer for animations (single trigger)
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.classList.contains('visible')) {
+                    entry.target.classList.add('visible');
+                    // Unobserve after animation to prevent re-triggering
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Initialize everything
+        document.addEventListener('DOMContentLoaded', () => {
+            // Ensure UI reflects persisted language before anything else
+            changeLanguage(currentLanguage);
+            
+            // Observe all fade-in elements
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Close modal when clicking outside
+            document.getElementById('privacyModal').addEventListener('click', (e) => {
+                if (e.target.id === 'privacyModal') {
+                    togglePrivacyPolicy();
+                }
+            });
+
+            // Keyboard navigation for modal
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && !document.getElementById('privacyModal').classList.contains('hidden')) {
+                    togglePrivacyPolicy();
+                }
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'980913ea1286cfe8',t:'MTc1ODExNzA4MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
